@@ -1,6 +1,7 @@
 {
   "name": "mars",
   "version": "0.1.0",
+  "homepage": "https://vkravchik.github.io/Mars",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -28,9 +29,13 @@
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.3.2"
   },
   "scripts": {
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
