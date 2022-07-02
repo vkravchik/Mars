@@ -1,3 +1,4 @@
+import { SearchOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,7 +15,11 @@ const User = () => {
 
   return (
     <div>
-      <Button type={'primary'} onClick={handleEmailChange}>
+      <Button
+        type={'primary'}
+        icon={<SearchOutlined />}
+        onClick={handleEmailChange}
+      >
         Change email
       </Button>
       <h2>Email: {user.email}</h2>
